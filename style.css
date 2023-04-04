@@ -1,16 +1,23 @@
 .navbar {
     color: #FFFFFF;
-
+    font-family: "Bistroblock", "PT Sans", Calibri, Tahoma, sans-serif;
 }
 
 .design {
     font-family: "Honeybee", "PT Sans", Calibri, Tahoma, sans-serif;
 }
-
+p {
+    font-family: "Honeybee", "PT Sans", Calibri, Tahoma, sans-serif;
+}
+#content {
+    margin: 2em;
+}
 @font-face {
     font-family: "Honeybee";
     src: local('Honeybee'), url(assets/fonts/Honeybeeregular-MG0p.ttf) format('truetype'),
     local('Honeybee'), url(assets/fonts/Honeybee.woff) format('woff');
+    font-family: "Bistroblock";
+    src: local('Bistroblock'), url(assets/fonts/Bistroblock-oygz.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
 }
