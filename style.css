@@ -39,6 +39,9 @@ p {
 #textbox-content {
     z-index: 1;
 }
+.carousel-item {
+    width: 800px;
+}
 /* body {
     font-family: "Honeybee", "PT Sans", Calibri, Tahoma, sans-serif;
     
