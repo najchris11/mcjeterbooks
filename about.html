@@ -22,14 +22,14 @@
             <div class="container-fluid">
                 <!-- Navbar Logo -->
                 <a class="navbar-brand me-2 col">
-                    <img src="assets/nav-logo.png" width="64" alt="mcjeterlogo" loading="lazy" />
+                    <img src="assets/icons/nav-logo.png" width="64" alt="mcjeterlogo" loading="lazy" />
                 </a>
                 <div class="col-4 justify-content-center align-items-center" id="navbar">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
+                        </li> -->
+                        <li class="nav-item active">
                             <a class="nav-link" href="about.html">About M. C.</a>
                         </li>
                         <li class="nav-item">
@@ -38,14 +38,14 @@
                         <li class="nav-item">
                             <a class="nav-link" href="playlists.html">Extras</a>
                         </li>
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="connect.html">Connect</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-4 justify-content-right align-items-right">
-                    <a href="https://www.tiktok.com/@mcjeterbooks"><img src="assets/tt.png" width="25px"></a>
-                    <a href="https://www.instagram.com/mcjeterbooks/"><img src="assets/ig.png" width="25px"></a>
+                    <a href="https://www.tiktok.com/@mcjeterbooks"><img src="assets/icons/tt.png" width="25px"></a>
+                    <a href="https://www.instagram.com/mcjeterbooks/"><img src="assets/icons/ig.png" width="25px"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
                         aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -55,22 +55,32 @@
         </nav>
     </header>
 
-    <div class="row" id="content">
-        <div class="col-9" id="books">
+    <div class="container-fluid" id="content-wrap">
+        <div class="row" id="textbox-wrap">
+            <div id="textbox-content">
+                <h1>M.C. Jeter Updates!</h1>
+                <h2>Sample Text here</h2>
+            </div>
+
+        </div>
+        <div class="row">
             <article>
                 <header>
                     <h1>About M. C.</h1>
                 </header>
-                <div>
-                    <p><img src="assets/MCJ bluewhiteandblack braids.JPG" alt="Picture of MCJ with colored braids throwing up a peace sign" width="482.5" height="960"></p>
-
+                <div class="col align-self-center">
+                    <p><img src="assets/MCJ/IMG_6090.JPG"
+                            alt="Picture of MCJ with colored braids throwing up a peace sign" height="800"></p>
+                </div>
+                <div class="col-6">
                     <h3>Bio</h3> <br>
                     <p>M. C. Jeter is the indie author of The Gems, a new adult fantasy novel. She is set to graduate
                         from the Ohio State University in May 2024 with a BS in Neuroscience and a minor in American
                         Sign Language. For fun, M. C. likes to read, write, dance, sing and play on her Nintendo Switch.
                         As of right now, M. C. has many diverse stories bouncing around in her brain that she is so
                         excited to share with the world. </p>
-                    <p>M. C. Jeter began writing her debut novel in fourth grade and as she grew, her main character.
+                    <p>M. C. Jeter began writing her debut novel in fourth grade and as she grew, her main character did
+                        too.
                         From starting at 10 years old to ending at 17, Ruby, the main character of The Gems, will take
                         you on an adventure full of love, regret, and challenges.</p>
                     <p>&nbsp;</p>
@@ -79,17 +89,10 @@
 
             </article>
         </div>
-        <div class="col-3" id="list">
-            <div>
-                <h3 class="title">Books</h3>
-                <div>
-                    <ul class="menu">
-                        <li><a href="#">The Gems</a></li>
-                    </ul>
-                </div>
-                <div class="clear"></div>
-            </div>
+        <div class="row" id="bottom-banner">
+            <h1>Join my newsletter!</h1>
         </div>
+
     </div>
 
 </body>
