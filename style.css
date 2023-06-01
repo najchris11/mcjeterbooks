@@ -48,6 +48,7 @@ p {
 
 #textbox-content {
     z-index: 1;
+    text-align: center;
 }
 
 .carousel-item {
@@ -57,7 +58,12 @@ p {
 .nav-link {
     font-size: 24px;
 }
-
+#bottom-banner {
+    position: relative;
+    background-color: rgba(255, 255, 255, .5);
+    padding-top: 1em;
+    margin-top: 2em;
+}
 /* .characters img{
     width: 80px;
 } */
