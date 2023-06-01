@@ -6,23 +6,28 @@
 .design {
     font-family: "Semi-Casual", "PT Sans", Calibri, Tahoma, sans-serif;
 }
+
 p {
     font-family: "Semi-Casual", "PT Sans", Calibri, Tahoma, sans-serif;
 }
+
 #content {
     margin: 2em;
 }
+
 @font-face {
     font-family: "Honeybee";
     src: local('Honeybee'), url(assets/fonts/Honeybeeregular-MG0p.ttf) format('truetype'),
-    local('Honeybee'), url(assets/fonts/Honeybee.woff) format('woff');
+        local('Honeybee'), url(assets/fonts/Honeybee.woff) format('woff');
 }
+
 @font-face {
     font-family: "Bistroblock";
     src: local('Bistroblock'), url(assets/fonts/Bistroblock-oygz.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: "Semi-Casual";
     src: url(assets/fonts/Semi-Casual.ttf) format('truetype');
@@ -38,22 +43,31 @@ p {
     padding-bottom: 1em;
     margin-top: 2em;
     margin-bottom: 2em;
-    box-shadow: 0 30px 40px rgba(0,0,0,.1);
+    box-shadow: 0 30px 40px rgba(0, 0, 0, .1);
 }
+
 #textbox-content {
     z-index: 1;
 }
+
 .carousel-item {
     width: 800px;
 }
+
 .nav-link {
     font-size: 24px;
 }
-.characters img{
+
+/* .characters img{
     width: 80px;
+} */
+.carousel-control-next,
+.carousel-control-prev,
+.carousel-indicators {
+    filter: invert(100%);
 }
+
 /* body {
     font-family: "Honeybee", "PT Sans", Calibri, Tahoma, sans-serif;
     
 } */
-
