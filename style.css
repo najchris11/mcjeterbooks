@@ -46,6 +46,12 @@ p {
 .carousel-item {
     width: 800px;
 }
+.nav-link {
+    font-size: 24px;
+}
+.characters img{
+    width: 80px;
+}
 /* body {
     font-family: "Honeybee", "PT Sans", Calibri, Tahoma, sans-serif;
     
