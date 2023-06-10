@@ -54,6 +54,9 @@ p {
 .carousel-item {
     width: 800px;
 }
+.mia-pictures {
+    max-height: 400px;
+}
 
 .nav-link {
     font-size: 24px;
