@@ -45,6 +45,15 @@ p {
     margin-bottom: 2em;
     box-shadow: 0 30px 40px rgba(0, 0, 0, .1);
 }
+#book-wrap {
+    /* position: relative; */
+    background-color: rgba(255, 255, 255, .5);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    box-shadow: 0 30px 40px rgba(0, 0, 0, .1);
+}
 
 #textbox-content {
     z-index: 1;
