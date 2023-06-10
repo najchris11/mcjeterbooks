@@ -86,3 +86,7 @@ p {
     font-family: "Honeybee", "PT Sans", Calibri, Tahoma, sans-serif;
     
 } */
+.img-book {
+    max-width: 50%;
+    height: auto;
+  }
