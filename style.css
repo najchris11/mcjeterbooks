@@ -60,7 +60,7 @@ p {
 }
 #bottom-banner {
     position: relative;
-    background-color: rgba(255, 255, 255, .5);
+    background-color: rgba(255, 255, 255);
     padding-top: 1em;
     margin-top: 2em;
 }
