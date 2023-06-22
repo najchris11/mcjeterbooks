@@ -11,8 +11,14 @@ p {
     font-family: "Semi-Casual", "PT Sans", Calibri, Tahoma, sans-serif;
 }
 
-#content {
+#content-wrap {
     margin: 2em;
+        width: 100%;
+        max-width: 1340px;
+        padding-right: 32px;
+        padding-left: 32px;
+        margin-right: auto!important;
+        margin-left: auto!important;
 }
 
 @font-face {
@@ -88,5 +94,5 @@ p {
 } */
 .img-book {
     max-width: 50%;
-    height: auto;
+    max-height: 800px;
   }
