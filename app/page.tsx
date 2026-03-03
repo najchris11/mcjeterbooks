@@ -1,95 +1,44 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import PhotoCarousel from "./components/PhotoCarousel";
 
-export default function Home() {
+const photos = [
+  { src: "/mcj/IMG_6090.JPG", alt: "M.C. Jeter photo 1" },
+  { src: "/mcj/IMG_6041.JPG", alt: "M.C. Jeter photo 2" },
+  { src: "/mcj/IMG_6150.JPG", alt: "M.C. Jeter photo 3" },
+];
+
+export default function AboutPage() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+    <main className="page-content">
+      <div className="content-card">
+        <h1>M.C. Jeter Updates!</h1>
+        <a href="https://a.co/d/hofcGNV">
+          <h2>The Gems: Available Now</h2>
+        </a>
+        <h3>Scroll down to join my newsletter!</h3>
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <article>
+        <h1 className="section-heading">About M. C.</h1>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
+        <div className="content-card">
+          <h3>Bio</h3>
           <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+            M. C. Jeter is the indie author of The Gems, a new adult fantasy novel. She is set to
+            graduate from the Ohio State University in May 2024 with a BS in Neuroscience and a
+            minor in American Sign Language. For fun, M. C. likes to read, write, dance, sing and
+            play on her Nintendo Switch. As of right now, M. C. has many diverse stories bouncing
+            around in her brain that she is so excited to share with the world.
           </p>
-        </a>
-      </div>
+          <p>
+            M. C. Jeter began writing her debut novel in fourth grade and as she grew, her main
+            character did too. From starting at 10 years old to ending at 17, Ruby, the main
+            character of The Gems, will take you on an adventure full of love, regret, and
+            challenges. You can embark on her adventure starting July 1st, 2023!
+          </p>
+        </div>
+
+        <PhotoCarousel photos={photos} />
+      </article>
     </main>
   );
 }
