@@ -44,10 +44,10 @@ a {
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 0.75rem 2rem;
   background-color: #ffffff;
   font-family: var(--font-bistroblock), "PT Sans", Calibri, Tahoma, sans-serif;
+  position: relative;
 }
 
 .navbar-logo img {
@@ -55,8 +55,39 @@ a {
   display: block;
 }
 
+/* Hamburger button — hidden on desktop */
+.navbar-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.4rem;
+}
+
+.hamburger-bar {
+  display: block;
+  width: 26px;
+  height: 3px;
+  background-color: #1a1a1a;
+  border-radius: 2px;
+  transition: opacity 0.2s;
+}
+
+/* Desktop: menu fills remaining space, links centered, social pinned right */
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-left: 2rem;
+}
+
 .navbar-links {
   display: flex;
+  flex: 1;
+  justify-content: center;
   gap: 1.5rem;
   list-style: none;
 }
@@ -124,6 +155,21 @@ a {
   width: 95%;
   margin: 2rem auto;
   text-align: center;
+}
+
+@keyframes carouselFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.carousel-image-wrap {
+  animation: carouselFadeIn 0.4s ease;
 }
 
 .carousel-wrap img {
@@ -285,20 +331,41 @@ a {
 
 /* ── Responsive ── */
 @media (max-width: 768px) {
-  .navbar {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.75rem;
+  .navbar-hamburger {
+    display: flex;
+    margin-left: auto;
+  }
+
+  /* Mobile dropdown — absolutely positioned below the navbar bar */
+  .navbar-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0 1rem;
+    background-color: #ffffff;
+    border-top: 1px solid #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    z-index: 100;
+  }
+
+  .navbar-menu.open {
+    display: flex;
   }
 
   .navbar-links {
-    flex-wrap: wrap;
+    flex: none;
+    flex-direction: column;
+    align-items: center;
     gap: 0.75rem;
-    justify-content: center;
   }
 
   .navbar-links a {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .page-content {

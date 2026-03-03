@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 const navLinks = [
   { href: "/", label: "About M.C." },
@@ -13,46 +14,64 @@ const navLinks = [
 
 export default function Navbar() {
   const pathname = usePathname();
+  const [open, setOpen] = useState(false);
 
   return (
     <nav className="navbar" aria-label="Main navigation">
       <div className="navbar-logo">
-        <Link href="/" aria-label="M.C. Jeter Books — home">
+        <Link href="/" aria-label="M.C. Jeter Books — home" onClick={() => setOpen(false)}>
           <Image src="/icons/nav-logo.png" width={64} height={64} alt="" aria-hidden="true" priority />
         </Link>
       </div>
 
-      <ul className="navbar-links" role="list">
-        {navLinks.map(({ href, label }) => (
-          <li key={href}>
-            <Link
-              href={href}
-              className={pathname === href ? "active" : ""}
-              aria-current={pathname === href ? "page" : undefined}
-            >
-              {label}
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <button
+        className="navbar-hamburger"
+        onClick={() => setOpen((o) => !o)}
+        aria-expanded={open}
+        aria-controls="navbar-menu"
+        aria-label={open ? "Close navigation menu" : "Open navigation menu"}
+      >
+        <span className="hamburger-bar" />
+        <span className="hamburger-bar" />
+        <span className="hamburger-bar" />
+      </button>
 
-      <div className="navbar-social">
-        <a
-          href="https://www.tiktok.com/@mcjeterbooks"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Follow M.C. Jeter on TikTok (opens in new tab)"
-        >
-          <Image src="/icons/tt.png" width={25} height={25} alt="" aria-hidden="true" />
-        </a>
-        <a
-          href="https://www.instagram.com/mcjeterbooks/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Follow M.C. Jeter on Instagram (opens in new tab)"
-        >
-          <Image src="/icons/ig.png" width={25} height={25} alt="" aria-hidden="true" />
-        </a>
+      <div id="navbar-menu" className={`navbar-menu${open ? " open" : ""}`}>
+        <ul className="navbar-links" role="list">
+          {navLinks.map(({ href, label }) => (
+            <li key={href}>
+              <Link
+                href={href}
+                className={pathname === href ? "active" : ""}
+                aria-current={pathname === href ? "page" : undefined}
+                onClick={() => setOpen(false)}
+              >
+                {label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+
+        <div className="navbar-social">
+          <a
+            href="https://www.tiktok.com/@mcjeterbooks"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Follow M.C. Jeter on TikTok (opens in new tab)"
+            onClick={() => setOpen(false)}
+          >
+            <Image src="/icons/tt.png" width={25} height={25} alt="" aria-hidden="true" />
+          </a>
+          <a
+            href="https://www.instagram.com/mcjeterbooks/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Follow M.C. Jeter on Instagram (opens in new tab)"
+            onClick={() => setOpen(false)}
+          >
+            <Image src="/icons/ig.png" width={25} height={25} alt="" aria-hidden="true" />
+          </a>
+        </div>
       </div>
     </nav>
   );
