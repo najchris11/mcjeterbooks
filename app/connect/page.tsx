@@ -6,12 +6,10 @@ export default function ConnectPage() {
       <div className="connect-frame">
         <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLSfL0t86g3fYwbG1DT9tqJKd46-QWXDDcjkSnMIWGj27rOoAKA/viewform?embedded=true"
-          width="640"
           height="900"
-          frameBorder="0"
-          marginHeight={0}
-          marginWidth={0}
-          title="Contact M.C. Jeter"
+          title="Contact M.C. Jeter — Google Form"
+          aria-label="Contact form — send a message to M.C. Jeter"
+          loading="lazy"
         >
           Loading…
         </iframe>

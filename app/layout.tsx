@@ -1,8 +1,21 @@
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 import Script from "next/script";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import "./globals.css";
+
+const semiCasual = localFont({
+  src: "../public/fonts/Semi-Casual.ttf",
+  variable: "--font-semi-casual",
+  display: "swap",
+});
+
+const bistroblock = localFont({
+  src: "../public/fonts/Bistroblock-oygz.ttf",
+  variable: "--font-bistroblock",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "M. C. Jeter Books",
@@ -17,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className={`${semiCasual.variable} ${bistroblock.variable}`}>
         <Script
           id="mailerlite-init"
           strategy="afterInteractive"

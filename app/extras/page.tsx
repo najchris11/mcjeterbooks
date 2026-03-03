@@ -18,7 +18,7 @@ export default function ExtrasPage() {
     <main className="page-content">
       <h1 className="section-heading">Extras</h1>
 
-      <h3 className="section-heading">M.C. Jeter Spotify</h3>
+      <h2 className="section-heading">M.C. Jeter Spotify</h2>
       <div className="spotify-grid">
         {spotifyPlaylists.map((playlist) => (
           <iframe
