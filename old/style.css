@@ -1,0 +1,106 @@
+.navbar {
+    color: #FFFFFF;
+    font-family: "Bistroblock", "PT Sans", Calibri, Tahoma, sans-serif;
+    
+}
+.cart-customlocation {
+    color: black;
+    font-family: "Bistroblock";
+}
+
+.design {
+    font-family: "Semi-Casual", "PT Sans", Calibri, Tahoma, sans-serif;
+}
+h1, h2, h3, p {
+    font-family: "Semi-Casual", "PT Sans", Calibri, Tahoma, sans-serif;
+}
+a:link, a:visited, a:hover, a:active{
+	color: black;
+}
+
+#content-wrap {
+    margin: 2em;
+        width: 100%;
+        max-width: 1340px;
+        padding-right: 32px;
+        padding-left: 32px;
+        margin-right: auto!important;
+        margin-left: auto!important;
+	font-family: "Semi-Casual", "PT Sans", Calibri, Tahoma, sans-serif;
+}
+
+@font-face {
+    font-family: "Honeybee";
+    src: local('Honeybee'), url(assets/fonts/Honeybeeregular-MG0p.ttf) format('truetype'),
+        local('Honeybee'), url(assets/fonts/Honeybee.woff) format('woff');
+}
+
+@font-face {
+    font-family: "Bistroblock";
+    src: local('Bistroblock'), url(assets/fonts/Bistroblock-oygz.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Semi-Casual";
+    src: url(assets/fonts/Semi-Casual.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#textbox-wrap {
+    /* position: relative; */
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    box-shadow: 0 30px 40px rgba(0, 0, 0, .1);
+}
+#book-wrap {
+    /* position: relative; */
+    background-color: rgba(255, 255, 255, .5);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    box-shadow: 0 30px 40px rgba(0, 0, 0, .1);
+}
+
+#textbox-content {
+    z-index: 1;
+    text-align: center;
+}
+
+.carousel-item {
+    width: 800px;
+}
+
+.nav-link {
+    font-size: 24px;
+}
+#bottom-banner {
+    position: relative;
+    background-color: rgba(255, 255, 255);
+    padding-top: 1em;
+    margin-top: 2em;
+}
+/* .characters img{
+    width: 80px;
+} */
+.carousel-control-next,
+.carousel-control-prev,
+.carousel-indicators {
+    filter: invert(100%);
+}
+
+body {
+    font-family: "Honeybee", "PT Sans", Calibri, Tahoma, sans-serif;
+    
+}
+.img-book {
+    max-width: 50%;
+    max-height: 800px;
+  }
