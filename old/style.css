@@ -1,14 +1,21 @@
 .navbar {
     color: #FFFFFF;
     font-family: "Bistroblock", "PT Sans", Calibri, Tahoma, sans-serif;
+    
+}
+.cart-customlocation {
+    color: black;
+    font-family: "Bistroblock";
 }
 
 .design {
     font-family: "Semi-Casual", "PT Sans", Calibri, Tahoma, sans-serif;
 }
-
 h1, h2, h3, p {
     font-family: "Semi-Casual", "PT Sans", Calibri, Tahoma, sans-serif;
+}
+a:link, a:visited, a:hover, a:active{
+	color: black;
 }
 
 #content-wrap {
@@ -19,6 +26,7 @@ h1, h2, h3, p {
         padding-left: 32px;
         margin-right: auto!important;
         margin-left: auto!important;
+	font-family: "Semi-Casual", "PT Sans", Calibri, Tahoma, sans-serif;
 }
 
 @font-face {
@@ -88,10 +96,10 @@ h1, h2, h3, p {
     filter: invert(100%);
 }
 
-/* body {
+body {
     font-family: "Honeybee", "PT Sans", Calibri, Tahoma, sans-serif;
     
-} */
+}
 .img-book {
     max-width: 50%;
     max-height: 800px;
